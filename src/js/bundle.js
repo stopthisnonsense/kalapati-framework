@@ -2,9 +2,15 @@ const gameArea = () => {
   myGameArea.canvas = document.querySelector('.game-area');
   myGameArea.start();
     // console.log( myGameArea.context )
-  let playerPiece = new component(50, 50, 'blue', 10, 10);
+  let playerPiece = new component(25, 25, 'blue', 10, 10);
 };
 
+const keyPress = {
+    up: false,
+    down: false,
+    left: false,
+    right: false
+}
 const myGameArea = {
   canvas: '',
   start: function () {
