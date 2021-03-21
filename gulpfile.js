@@ -129,7 +129,7 @@ async function sassBundle(cb) {
 		.pipe(sourcemaps.init())
 		.pipe(sassGlob())
 		.pipe(sass(config.css.sass))
-		.pipe(autoprefixer(config.css.autoprefixer))
+		.pipe(autoprefixer())
 		.pipe(sass.sync().on('error', sass.logError))
 		.pipe(cache(nano()))
 		.pipe(sourcemaps.write('.'))
