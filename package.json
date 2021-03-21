@@ -15,6 +15,7 @@
     "gulp-yaml": "^2.0.4",
     "jquery": "^3.4.1",
     "motion-ui": "^2.0.3",
+    "three": "^0.126.1",
     "what-input": "^5.2.3"
   },
   "devDependencies": {
