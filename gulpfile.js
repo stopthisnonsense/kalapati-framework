@@ -24,7 +24,7 @@ const config = {
 	js: {
 		dest: './assets/js',
 		vendor: {
-			paths: [],
+			paths: ['./node_modules'],
 			filename: 'vendor.bundle.js',
 		},
 		commons: {
