@@ -1,7 +1,8 @@
 {
 	"folders": [
 		{
-			"path": "."
+			"name": "kalapati-framework",
+			"path": "..\\game-thing\\kalapati-framework"
 		}
 	],
 	"settings": {}
