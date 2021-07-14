@@ -1,13 +1,15 @@
 import { d4 } from './dice';
 
-class Weapon {}
+class Weapon {
+	constructor(name, cost, damage, weight, properties) {
+		this.name = name;
+		this.cost = cost;
+		this.damage = damage;
+		this.weight = weight;
+		this.properties = properties;
+	}
+}
 
-const club = {
-	name: 'Club',
-	cost: 1,
-	damage: d4,
-	weight: 2,
-	properties: ['light'],
-};
+const club = new Weapon('Club', 1, d4, 2, ['light']);
 
 export { club };
