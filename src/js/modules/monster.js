@@ -1,20 +1,20 @@
 import { multiDice } from './dice';
 class Monster {
 	constructor(
-		name,
-		ac,
-		hp,
-		speed,
-		str,
-		dex,
-		con,
-		int,
-		wis,
-		cha,
-		skills,
-		senses,
-		languages,
-		challenge
+		name = 'generic',
+		ac = 10,
+		hp = multiDice(1, 4),
+		speed = 30,
+		str = 10,
+		dex = 10,
+		con = 10,
+		int = 10,
+		wis = 10,
+		cha = 10,
+		skills = {},
+		senses = {},
+		languages = [],
+		challenge = 1
 	) {
 		this.name = name;
 		this.ac = ac;

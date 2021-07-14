@@ -1,7 +1,8 @@
 import { d4 } from './dice';
 
 class Weapon {
-	constructor(name, cost, damage, weight, properties) {
+	constructor(name, cost, damage = d4, weight, properties = []) {
+		if ((name, cost, damage, weight == null)) return;
 		this.name = name;
 		this.cost = cost;
 		this.damage = damage;

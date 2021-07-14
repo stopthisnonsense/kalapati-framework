@@ -1,12 +1,11 @@
 const rollDice = (number, modifier = 0) => {
-	if (number) {
-		return Math.ceil(Math.random() * number) + modifier;
-	} else {
-		return Math.ceil(Math.random() * 20) + modifier;
-	}
+	if (number) return Math.ceil(Math.random() * number) + modifier;
+	return Math.ceil(Math.random() * 20) + modifier;
 };
 const multiDice = (numberOfDice, diceSides, modifier = 0) => {
+	if (numberOfDice == null) return;
 	let finalNumber = 0;
+
 	if (numberOfDice > 0) {
 		for (let i = 0; i < numberOfDice; i++) {
 			finalNumber += rollDice(diceSides, modifier);

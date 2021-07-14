@@ -1,5 +1,6 @@
 class Armor {
-	constructor(name, type, cost, ac, str, disadvantage, weight) {
+	constructor(name, type, cost, ac, str, disadvantage = false, weight) {
+		if ((name, type, cost, ac, disadvantage, weight == null)) return;
 		this.name = name;
 		this.type = type;
 		this.cost = cost;
